@@ -1,0 +1,97 @@
+:root {
+  --bg-color: #800020;
+  --output-bg: #ffffff;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.75);
+  --text-color: black;
+  --primary-color: red;
+  --secondary-color: red;
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.container {
+  width: 80%;
+  margin-top: 48px;
+  padding: 48px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+table {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 3px solid var(--primary-color);
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  font-size: 24px;
+}
+
+img {
+  max-width: 250px;
+}
+
+form {
+  width: 50%;
+  padding: 48px 24px;
+  background: var(--output-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+form input,
+form select {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
